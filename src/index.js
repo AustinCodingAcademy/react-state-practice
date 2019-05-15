@@ -1,18 +1,38 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import InputForm from "./InputForm";
+import ClassInputForm from "./ClassInputForm";
+import HooksInputForm from "./HooksInputForm";
 
 function render(){
-   ReactDOM.render(<div>
+   ReactDOM.render(
+     <div>
        <div>
-           Person 1
-           <InputForm refresh={render}/>
+            Class
+            <div>
+                Person 1
+                <ClassInputForm refresh={render}/>
+            </div>
+            <div>
+                Person 2
+                <ClassInputForm refresh={render}/>
+            </div>
        </div>
-       <div>
-          Person 2
-          <InputForm refresh={render}/>
+       <hr/>
+       <div style={{marginTop:"30px"}}>
+            Hooks
+            <div>
+                Person 1
+                <HooksInputForm refresh={render}/>
+            </div>
+            <div>
+                Person 2
+                <HooksInputForm refresh={render}/>
+            </div>
        </div>
-       </div>, document.getElementById('root'));
+    </div>
+       
+       
+       , document.getElementById('root'));
 
 }
 render();
