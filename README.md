@@ -9,7 +9,7 @@ Fork, clone, npm install, npm start
 
 ### TODO
 * Fix this issue in ClassInputForm by using react class state. 
-* Fix this issue in HooksInputForm using react hooks to fix this issue.
+* Fix this issue in HooksInputForm using react hooks useState to fix this issue.
 
 ### Questions
 Which approach is better?
